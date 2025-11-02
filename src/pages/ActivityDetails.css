@@ -1,0 +1,48 @@
+.activity-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+  color: white;
+}
+
+.details-card {
+  background: #121212;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  text-align: center;
+}
+
+.event-title {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.event-description {
+  color: #dcdcdc;
+  margin-bottom: 10px;
+}
+
+.event-date {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #008fcc;
+}

@@ -1,0 +1,61 @@
+/* src/components/Navbar.css */
+:root{
+  --nav-h: 72px;
+}
+
+*{box-sizing:border-box}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* fixed full-width navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+  z-index: 1000;
+ .navbar {
+  background: linear-gradient(90deg, #6d0404, #780606) !important;
+}
+
+
+  box-shadow: 0 4px 12px rgba(11, 1, 1, 0.12);
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  font-weight:700;
+  color:#fff;
+  font-size:1.25rem;
+}
+
+.nav-links{
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+
+.nav-links a{
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:600;
+  letter-spacing:0.3px;
+  transition: color .18s ease, transform .18s ease;
+}
+
+.nav-links a:hover{ color:#fff7a8; transform: translateY(-2px); }
+
+/* utility for page containers to offset fixed navbar */
+.page-with-nav {
+  padding-top: calc(var(--nav-h) + 32px); /* push content below navbar */
+}
